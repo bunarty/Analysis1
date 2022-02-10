@@ -154,7 +154,7 @@ BEGIN
 
     /* insert a new record in book_copies table if barcode is provided */ 
 
-    IF NOT(bookcopy_barcode_id IS NULL) THEN 
+    IF (bookcopy_barcode_id IS NOT NULL) THEN 
 
         INSERT INTO book_copies(barcode_id, isbn) 
 
@@ -307,7 +307,7 @@ BEGIN
 
     WHERE isbn = book_isbn; 
 
-    DBMS_OUTPUT.PUT_LINE('Book count: ' || total_copies); 
+    DBMS_OUTPUT.PUT_LINE(book_isbn || 'book count is:'|| total_copies); 
 
 END book_count; 
 

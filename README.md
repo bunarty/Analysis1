@@ -1,2 +1,2 @@
-# Wales Road Accident Data Anaalysis
-Python Notebook containing nWales Road Accident Data Anaalysis
+# Wales Road Accident Data Analysis
+Python Notebook containing nWales Road Accident Data Analysis
